@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Laboratorios CMI | Proyecto</title>
+
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/lab.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/delacion.css" />
+
+    <style></style>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo">JN<span>.Molina</span></a>
+
+        <div class="nav-controls">
+          <nav class="nav-menu">
+            <a href="../index.html#sobre-mi">Sobre mí</a>
+            <a href="../index.html#proyectos">Proyectos</a>
+            <a href="../index.html#laboratorio">Laboratorio</a>
+            <a href="../index.html#contacto">Contacto</a>
+          </nav>
+
+          <button id="themeToggle" class="theme-toggle-btn">
+            🌓 Cambiar Tema
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="project-detail-section">
+      <div class="container">
+        <!-- BOTÓN VOLVER -->
+        <a href="../index.html" class="back-btn">
+          <i class="bx bx-arrow-back"></i>
+          Volver al portafolio
+        </a>
+
+        <!-- HEADER -->
+        <header class="project-header">
+          <h1>Laboratorios CMI</h1>
+
+          <p>
+            Sistema clínico desarrollado para apoyar la gestión interna de una
+            clínica de análisis médicos, permitiendo administrar pacientes,
+            estudios, recibos, usuarios y procesos operativos desde una sola
+            interfaz.
+          </p>
+
+          <div class="tech-carousel">
+            <!-- FILA 1 -->
+            <div class="tech-track track-right">
+              <div class="tech-item">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML5</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS3</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node.js</span>
+              </div>
+            </div>
+
+            <!-- FILA 2 -->
+            <div class="tech-track track-left">
+              <div class="tech-item">
+                <i class="bx bx-server"></i>
+                <span>Express</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-sqlite-plain colored"></i>
+                <span>SQLite</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-github-original"></i>
+                <span>GitHub</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="devicon-electron-original colored"></i>
+                <span>Electron</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- IMAGEN PRINCIPAL -->
+        <img
+          src="../assets/logoCMI.png"
+          alt="Sistema Laboratorios CMI"
+          class="project-main-image reveal"
+        />
+
+        <!-- INFORMACIÓN -->
+        <section class="project-info-grid reveal">
+          <article class="info-card">
+            <h2>Información general</h2>
+
+            <p>
+              <strong>Tipo:</strong>
+              Sistema empresarial / clínico
+            </p>
+
+            <p>
+              <strong>Estado:</strong>
+              Concluido / En uso
+            </p>
+
+            <p>
+              <strong>Duración:</strong>
+              Proyecto a largo plazo
+            </p>
+
+            <p>
+              <strong>Ubicación:</strong>
+              Tabasco, México
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h2>Objetivo del sistema <i class="bx bx-bullseye"></i></h2>
+
+            <p>
+              Automatizar procesos administrativos y facilitar el manejo de
+              pacientes, estudios clínicos y reportes dentro de la clínica.
+            </p>
+
+            <p>
+              También se buscó construir una solución funcional que pueda
+              ejecutarse localmente sin depender de internet.
+            </p>
+          </article>
+        </section>
+
+        <!-- DESCRIPCIÓN -->
+        <section class="project-description reveal">
+          <h2>Desarrollo del proyecto</h2>
+
+          <p>
+            El desarrollo del sistema se realizó a lo largo de un semestre
+            académico como parte de distintas materias de la universidad,
+            incluyendo Desarrollo Web, Herramientas para el Diseño de
+            Aplicaciones, Taller de Base de Datos y Desarrollo e Integración de
+            Sistemas de Información.
+          </p>
+
+          <p>
+            El proyecto fue construido utilizando una arquitectura separada
+            entre frontend, backend y base de datos. La interfaz fue
+            desarrollada con HTML, CSS y JavaScript, mientras que el servidor
+            utiliza Node.js y Express para manejar la lógica y comunicación con
+            SQLite.
+          </p>
+
+          <p>
+            Entre las funcionalidades implementadas se encuentran:
+            <strong
+              >autenticación de usuarios, manejo de roles, generación de
+              recibos, control de estudios médicos, historial clínico y reportes
+              administrativos</strong
+            >.
+          </p>
+        </section>
+
+        <!-- GALERÍA -->
+        <section>
+          <h2 class="section-title">Galería del proyecto</h2>
+
+          <div class="project-gallery reveal">
+            <img src="../assets/image.png" alt="Pantalla principal" />
+
+            <img src="../assets/2.png" alt="Sistema de pacientes" />
+
+            <img src="../assets/3.png" alt="Generación de recibos" />
+
+            <img src="../assets/4.png" alt="Panel administrativo" />
+
+            <img src="../assets/5.png" alt="Panel administrativo" />
+            <img src="../assets/6.png" alt="Panel administrativo" />
+            <img src="../assets/7.png" alt="Panel administrativo" />
+            <img src="../assets/8.png" alt="Panel administrativo" />
+          </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact-card reveal">
+          <h2>
+            <i class="bx bx-map"></i>
+            Ubicación del proyecto
+          </h2>
+
+          <p>El sistema fue desarrollado para una clínica ubicada en:</p>
+
+          <p class="clinic-address">
+            C. Carlos Ramos 261, Centro, 86801 Teapa, Tabasco, México.
+          </p>
+
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!4v1779633534490!6m8!1m7!1sHdv5OCHAJ8bHFQMXNqoziQ!2m2!1d17.55992672528254!2d-92.95034055584115!3f97.88728521994658!4f-1.7116843444922694!5f0.7820865974627469"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+          <br /><br />
+          <p>
+            Los datos de contacto de la clínica se muestran únicamente con
+            autorización previa.
+          </p>
+          <p>
+            Para información adicional relacionada con el desarrollo del
+            sistema, puede consultarse el repositorio o contactar directamente
+            al desarrollador.
+          </p>
+        </section>
+
+        <section class="contact-card reveal">
+          <h2>
+            <i class="bx bx-user"></i>
+            Referencia del proyecto
+          </h2>
+
+          <p>
+            El desarrollo del sistema se realizó en coordinación con la Ing.
+            Bioquímica Petra Pío Narváez, responsable de la clínica y principal
+            enlace durante el levantamiento de requerimientos, validación de
+            funciones y pruebas del sistema.
+          </p>
+
+          <div class="reference-info">
+            <div class="reference-item">
+              <i class="bx bx-user-circle"></i>
+              <span>Ing. Bioq. Petra Pío Narváez</span>
+            </div>
+
+            <div class="reference-item">
+              <i class="bx bx-phone"></i>
+              <span>+52 932 170 1093</span>
+            </div>
+
+            <div class="reference-item">
+              <i class="bx bx-envelope"></i>
+              <span>cmilab01@gmail.com</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- MODAL DE IMAGEN -->
+    <div class="image-modal" id="imageModal">
+      <button class="close-modal" id="closeModal">
+        <i class="bx bx-x"></i>
+      </button>
+
+      <img src="" alt="Vista ampliada" id="modalImage" />
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/lab.js"></script>
+  </body>
+</html>

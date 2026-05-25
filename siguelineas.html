@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Robot Sigue Líneas | Proyecto</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+
+  <style>
+    .video-showcase {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      gap: 28px;
+      margin-top: 30px;
+      align-items: stretch;
+    }
+
+    .video-wrapper {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 22px;
+      padding: 18px;
+
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-video {
+      width: 100%;
+      max-height: 720px;
+      border-radius: 18px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .video-side-info {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .video-info-card {
+      flex: 1;
+
+      background-color: var(--bg-card);
+
+      border: 1px solid var(--border-color);
+
+      border-radius: 18px;
+
+      padding: 28px;
+
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+
+      transition: var(--transition);
+    }
+
+    .video-info-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .video-info-card i {
+      font-size: 2.3rem;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .video-info-card h3 {
+      margin-bottom: 12px;
+      font-size: 1.15rem;
+    }
+
+    .video-info-card p {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 900px) {
+      .video-showcase {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> JN<span>.Pérez</span> </a>
+
+        <div class="nav-controls">
+          <nav class="nav-menu">
+            <a href="../index.html#sobre-mi">Sobre mí</a>
+            <a href="../index.html#proyectos">Proyectos</a>
+            <a href="../index.html#habilidades">Habilidades</a>
+            <a href="../index.html#certificaciones">Certificaciones</a>
+            <a href="../index.html#contacto">Contacto</a>
+          </nav>
+
+          <button id="themeToggle" class="theme-toggle-btn">
+            🌓 Cambiar Tema
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- CONTENIDO -->
+
+    <main class="project-detail-section">
+      <div class="container">
+        <!-- BOTÓN VOLVER -->
+
+        <a href="../index.html#academicos" class="back-btn">
+          <i class="bx bx-arrow-back"></i>
+          Volver al portafolio
+        </a>
+
+        <!-- HEADER -->
+
+        <header class="project-header reveal">
+          <h1>Robot Sigue Líneas</h1>
+
+          <p>
+            Proyecto académico enfocado en el desarrollo de un robot autónomo
+            capaz de detectar y seguir trayectorias utilizando sensores
+            infrarrojos y lógica de control programada en Arduino.
+          </p>
+
+          <!-- TECNOLOGÍAS -->
+
+          <div class="tech-carousel">
+            <!-- FILA 1 -->
+
+            <div class="tech-track track-right">
+              <div class="tech-item">
+                <i class="bx bx-chip"></i>
+                <span>Arduino</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-radar"></i>
+                <span>Sensores IR</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-code-alt"></i>
+                <span>C++</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-bot"></i>
+                <span>Robótica</span>
+              </div>
+            </div>
+
+            <!-- FILA 2 -->
+
+            <div class="tech-track track-left">
+              <div class="tech-item">
+                <i class="bx bx-microchip"></i>
+                <span>Electrónica</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-cog"></i>
+                <span>Automatización</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-git-branch"></i>
+                <span>Lógica</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-wrench"></i>
+                <span>Hardware</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="project-info-grid reveal">
+          <article class="info-card">
+            <h2>Información general</h2>
+
+            <p>
+              <strong>Tipo:</strong>
+              Proyecto académico
+            </p>
+
+            <p>
+              <strong>Área:</strong>
+              Robótica y electrónica
+            </p>
+
+            <p>
+              <strong>Plataforma:</strong>
+              Arduino
+            </p>
+
+            <p>
+              <strong>Lenguaje:</strong>
+              C++
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h2>Objetivo del proyecto</h2>
+
+            <p>
+              Diseñar un robot autónomo capaz de detectar y seguir una línea
+              mediante sensores infrarrojos y lógica de control programada.
+            </p>
+
+            <p>
+              El proyecto buscó aplicar conceptos básicos de automatización,
+              sensores y programación orientada al control de movimiento.
+            </p>
+          </article>
+        </section>
+
+        <section class="project-description reveal">
+          <h2>Desarrollo del proyecto</h2>
+
+          <p>
+            Este proyecto corresponde a un fork de un robot siguelíneas basado
+            en Arduino Nano. Mi contribución se centró en corregir el mapeo de
+            pines del puente H y mejorar la estabilidad del control de motores
+            durante el seguimiento de línea.
+          </p>
+
+          <p>
+            Durante la revisión del código se identificaron conflictos en la
+            asignación de pines digitales, lo que afectaba la respuesta de los
+            motores. Se ajustó la configuración para que el Arduino Nano
+            trabajara correctamente con el driver TB6612FNG y el módulo de
+            sensores reflectivos QTR-8A.
+          </p>
+
+          <p>
+            También se realizaron pruebas de funcionamiento para validar que el
+            robot respondiera de forma estable a las señales de los sensores,
+            eliminando fallos de movimiento y mejorando su consistencia durante
+            el recorrido.
+          </p>
+        </section>
+
+        <section class="project-description reveal">
+          <h2>Contribuciones realizadas</h2>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <i class="bx bx-chip"></i>
+              <h3>Corrección de pines</h3>
+              <p>
+                Corrección de la asignación de pines del puente H para su uso
+                con Arduino Nano.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <i class="bx bx-code-alt"></i>
+              <h3>Ajuste del código</h3>
+              <p>
+                Modificación del código para evitar conflictos entre pines
+                digitales.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <i class="bx bx-cog"></i>
+              <h3>Mejora de motores</h3>
+              <p>
+                Mejora en la respuesta de los motores durante el seguimiento de
+                línea.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="project-description reveal">
+          <h2>Componentes y tecnologías utilizadas</h2>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <i class="bx bx-microchip"></i>
+              <h3>Control y sensores</h3>
+              <p>
+                Arduino Nano, C/C++ y módulo QTR-8A de sensores reflectivos.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <i class="bx bx-transfer"></i>
+              <h3>Control de motores</h3>
+              <p>
+                Driver TB6612FNG, puente H y micro motorreductores tipo Pololu
+                35mm 3000rpm 10:1.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <i class="bx bx-wrench"></i>
+              <h3>Estructura física</h3>
+              <p>
+                Cable plano, PCB para seguidor de línea, kit de llantas y piezas
+                impresas en 3D para las llantas y la parte frontal.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="project-description reveal">
+          <h2>Resultado</h2>
+
+          <p>
+            Después de las correcciones realizadas, el robot respondió de forma
+            estable y consistente a las señales de los sensores, eliminando
+            fallos de movimiento y mejorando su comportamiento durante el
+            seguimiento de línea.
+          </p>
+        </section>
+
+        <section class="project-description reveal">
+          <h2>Video del proyecto</h2>
+
+          <p>
+            Demostración del funcionamiento del robot después de las
+            correcciones realizadas en el sistema de control y seguimiento de
+            línea.
+          </p>
+
+          <div class="video-showcase">
+            <div class="video-wrapper">
+              <video controls class="project-video">
+                <source src="../assets/sigue2.mp4" type="video/mp4" />
+              </video>
+            </div>
+
+            <div class="video-side-info">
+              <div class="video-info-card">
+                <i class="bx bx-bot"></i>
+
+                <h3>Robot autónomo</h3>
+
+                <p>
+                  Sistema basado en sensores reflectivos y control de motores
+                  mediante Arduino Nano.
+                </p>
+              </div>
+
+              <div class="video-info-card">
+                <i class="bx bx-chip"></i>
+
+                <h3>Control y estabilidad</h3>
+
+                <p>
+                  Corrección de mapeo de pines y mejora en la respuesta de
+                  motores durante el recorrido.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- GALERÍA -->
+
+        <section class="reveal">
+          <h2 class="section-title">Galería del proyecto</h2>
+
+          <div class="project-gallery">
+            <img src="../assets/sigue1.jpeg" alt="Robot sigue líneas" />
+
+            <img src="../assets/sigue3.jpeg" alt="Componentes del robot" />
+          </div>
+        </section>
+        <br /><br />
+
+        <!-- 
+
+        <section class="contact-card reveal">
+          <h2>
+            <i class="bx bx-code-block"></i>
+            Código fuente
+          </h2>
+
+          <p>
+            El código del proyecto se encuentra disponible públicamente en
+            GitHub.
+          </p>
+
+          <div class="project-actions">
+            <a
+              href="https://github.com/JoseMolina07/Codigo_siguelineas8"
+              target="_blank"
+              class="btn"
+            >
+              Ver repositorio
+            </a>
+          </div>
+        </section> -->
+      </div>
+    </main>
+
+    <!-- MODAL -->
+
+    <div class="image-modal" id="imageModal">
+      <button class="close-modal" id="closeModal">
+        <i class="bx bx-x"></i>
+      </button>
+
+      <img src="" alt="Vista ampliada" id="modalImage" />
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/lab.js"></script>
+  </body>
+</html>

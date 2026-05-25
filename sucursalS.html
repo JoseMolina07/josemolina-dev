@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Diseño de Sucursal Santander | Proyecto</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lab.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <style>
+    .project-main-image {
+      width: 100%;
+    }
+    .pdf-viewer-card {
+      margin-top: 28px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+    }
+
+    .pdf-viewer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 22px 26px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .pdf-viewer-header h3 {
+      font-size: 1.25rem;
+      margin-bottom: 4px;
+    }
+
+    .pdf-viewer-header span {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .pdf-viewer-header i {
+      font-size: 2.4rem;
+      color: var(--accent);
+    }
+
+    .pdf-frame-container {
+      width: 100%;
+      height: 620px;
+      background-color: var(--bg-main);
+    }
+
+    .pdf-frame-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    .pdf-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 22px 26px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    @media (max-width: 700px) {
+      .pdf-frame-container {
+        height: 480px;
+      }
+
+      .pdf-actions {
+        flex-direction: column;
+      }
+
+      .pdf-actions .btn,
+      .pdf-actions .btn-secondary {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <body>
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="../index.html" class="logo"> JN<span>.Pérez</span> </a>
+
+        <div class="nav-controls">
+          <nav class="nav-menu">
+            <a href="../index.html#sobre-mi">Sobre mí</a>
+            <a href="../index.html#proyectos">Proyectos</a>
+            <a href="../index.html#habilidades">Habilidades</a>
+            <a href="../index.html#certificaciones">Certificaciones</a>
+            <a href="../index.html#contacto">Contacto</a>
+          </nav>
+
+          <button id="themeToggle" class="theme-toggle-btn">
+            🌓 Cambiar Tema
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="project-detail-section">
+      <div class="container">
+        <a href="../index.html#academicos" class="back-btn">
+          <i class="bx bx-arrow-back"></i>
+          Volver al portafolio
+        </a>
+
+        <header class="project-header reveal">
+          <h1>Diseño 3D de Sucursal Santander</h1>
+
+          <p>
+            Proyecto académico enfocado en el diseño de infraestructura
+            tecnológica para una sucursal bancaria, integrando modelado 3D,
+            distribución física de equipos, cableado estructurado y simulación
+            de red.
+          </p>
+
+          <div class="tech-carousel">
+            <div class="tech-track track-right">
+              <div class="tech-item">
+                <i class="bx bx-cube"></i>
+                <span>SketchUp</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-network-chart"></i>
+                <span>Packet Tracer</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-server"></i>
+                <span>Redes</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-wifi"></i>
+                <span>Conectividad</span>
+              </div>
+            </div>
+
+            <div class="tech-track track-left">
+              <div class="tech-item">
+                <i class="bx bx-building-house"></i>
+                <span>Infraestructura</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-chip"></i>
+                <span>Cableado</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-shield-quarter"></i>
+                <span>Seguridad física</span>
+              </div>
+
+              <div class="tech-item">
+                <i class="bx bx-desktop"></i>
+                <span>Topología</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="project-info-grid reveal">
+          <article class="info-card">
+            <h2>Información general</h2>
+
+            <p>
+              <strong>Tipo:</strong>
+              Proyecto académico
+            </p>
+
+            <p>
+              <strong>Área:</strong>
+              Redes e infraestructura
+            </p>
+
+            <p>
+              <strong>Herramientas:</strong>
+              SketchUp y Cisco Packet Tracer
+            </p>
+
+            <p>
+              <strong>Enfoque:</strong>
+              Infraestructura tecnológica bancaria
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h2>Objetivo del proyecto</h2>
+
+            <p>
+              Diseñar una sucursal bancaria funcional contemplando distribución
+              física, conectividad, cableado, segmentación de red y organización
+              de equipos.
+            </p>
+
+            <p>
+              El proyecto buscó integrar conceptos de redes, infraestructura
+              tecnológica y diseño físico en un entorno empresarial simulado.
+            </p>
+          </article>
+        </section>
+
+        <section class="project-description reveal">
+          <h2>Desarrollo del proyecto</h2>
+
+          <p>
+            Este proyecto fue desarrollado como práctica académica orientada al
+            diseño de infraestructura tecnológica para entornos empresariales.
+          </p>
+
+          <p>
+            Se realizó el modelado tridimensional de una sucursal bancaria
+            utilizando SketchUp, contemplando áreas de atención, oficinas,
+            distribución de equipos y espacios de trabajo.
+          </p>
+
+          <p>
+            Paralelamente se trabajó en la simulación de red mediante Cisco
+            Packet Tracer, configurando dispositivos de red, direccionamiento IP
+            y estructura de conectividad para representar un entorno funcional.
+          </p>
+
+          <p>
+            También se consideraron aspectos de organización física, cableado
+            estructurado, segmentación y distribución de equipos tecnológicos
+            dentro de la sucursal.
+          </p>
+        </section>
+
+        <!-- CARACTERÍSTICAS -->
+
+        <section class="project-description reveal">
+          <h2>Características principales</h2>
+
+          <p>
+            El proyecto incluye modelado 3D de la sucursal, simulación de red,
+            organización de infraestructura tecnológica y representación visual
+            de un entorno bancario empresarial.
+          </p>
+
+          <p>
+            Se trabajó con conceptos relacionados con switches, routers,
+            conectividad, cableado y distribución física de dispositivos para
+            lograr una integración coherente entre infraestructura y red.
+          </p>
+        </section>
+
+        <!-- GALERÍA -->
+
+        <section class="reveal">
+          <h2 class="section-title">Galería del proyecto</h2>
+
+          <div class="project-gallery">
+            <img src="../assets/38.png" alt="Vista principal" />
+
+            <img src="../assets/39.png" alt="Modelado interior" />
+
+            <img src="../assets/40.png" alt="Topología de red" />
+
+            <img src="../assets/41.png" alt="Infraestructura" />
+            <img src="../assets/42.png" alt="Infraestructura" />
+            <img src="../assets/43.png" alt="Infraestructura" />
+            <img src="../assets/44.png" alt="Infraestructura" />
+            <img src="../assets/45.png" alt="Infraestructura" />
+          </div>
+        </section>
+        <br /><br />
+        <!-- VIDEO -->
+        <section class="project-description reveal">
+          <h2>Recursos del proyecto</h2>
+
+          <p>
+            Documentación técnica del proyecto, donde se describe el diseño, la
+            planeación y la estructura de la sucursal simulada.
+          </p>
+
+          <div class="pdf-viewer-card">
+            <div class="pdf-viewer-header">
+              <div>
+                <h3>Documentación del proyecto</h3>
+                <span>Archivo PDF</span>
+              </div>
+
+              <i class="bx bxs-file-pdf"></i>
+            </div>
+
+            <div class="pdf-frame-container">
+              <iframe
+                src="../assets/certificados/DocumentacionMaqueta.pdf"
+                title="Documentación del proyecto Santander"
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+
+            <div class="pdf-actions">
+              <a
+                href="../assets/certificados/DocumentacionMaqueta.pdf"
+                target="_blank"
+                class="btn"
+              >
+                Ver en pestaña nueva
+              </a>
+
+              <a
+                href="../assets/certificados/DocumentacionMaqueta.pdf"
+                download
+                class="btn-secondary"
+              >
+                Descargar PDF
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- REFERENCIA -->
+
+        <section class="contact-card reveal">
+          <h2>
+            <i class="bx bx-info-circle"></i>
+            Contexto académico
+          </h2>
+
+          <p>
+            Proyecto desarrollado como práctica académica orientada al análisis
+            de infraestructura tecnológica y simulación de redes empresariales.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- MODAL IMAGEN -->
+
+    <div class="image-modal" id="imageModal">
+      <button class="close-modal" id="closeModal">
+        <i class="bx bx-x"></i>
+      </button>
+
+      <img src="" alt="Vista ampliada" id="modalImage" />
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/lab.js"></script>
+  </body>
+</html>
