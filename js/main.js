@@ -114,3 +114,27 @@ projectPreviews.forEach((preview) => {
     updateImage();
   });
 });
+
+const menuToggle = document.getElementById('menuToggle');
+const navControls = document.getElementById('navControls');
+
+menuToggle?.addEventListener('click', () => {
+  navControls?.classList.toggle('active');
+
+  const icon = menuToggle.querySelector('i');
+
+  if (navControls?.classList.contains('active')) {
+    icon.className = 'bx bx-x';
+  } else {
+    icon.className = 'bx bx-menu';
+  }
+});
+
+document.querySelectorAll('.nav-menu a').forEach((link) => {
+  link.addEventListener('click', () => {
+    navControls?.classList.remove('active');
+
+    const icon = menuToggle?.querySelector('i');
+    if (icon) icon.className = 'bx bx-menu';
+  });
+});
