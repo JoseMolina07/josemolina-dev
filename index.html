@@ -791,22 +791,33 @@
                 <span class="social-label">GitHub</span>
               </a>
             </div>
+
+            <a
+              href="https://wa.me/529616083196"
+              target="_blank"
+              class="social-card-btn whatsapp-btn"
+            >
+              <i class="bx bxl-whatsapp social-icon-big"></i>
+
+              <span class="social-label"> WhatsApp </span>
+            </a>
           </div>
 
           <form
             class="contact-form"
             id="portfolioForm"
-            action="https://formspree.io/f/TU_ID_AQUI"
+            action="https://formspree.io/f/xykvdnld"
             method="POST"
           >
             <div class="form-group">
               <label for="name">Nombre completo</label>
               <input
-                type="text"
-                id="name"
-                name="nombre"
+                type="email"
+                id="email"
+                name="correo"
                 required
-                placeholder="Ej. Juan Pérez"
+                maxlength="120"
+                placeholder="Ej. juan@empresa.com"
               />
             </div>
             <div class="form-group">
@@ -826,6 +837,7 @@
                 name="mensaje"
                 rows="5"
                 required
+                maxlength="1000"
                 placeholder="Cuéntame sobre tu vacante o proyecto..."
               ></textarea>
             </div>
