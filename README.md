@@ -124,12 +124,6 @@ El portafolio continuará actualizándose conforme desarrolle nuevos proyectos y
 
 ---
 
-## 🌐 Demo
-
-👉 **[josemolina-dev.vercel.app](https://josemolina-dev.vercel.app)**
-
----
-
 ## 👤 Autor
 
 **José Neftalí Molina Pérez**  
