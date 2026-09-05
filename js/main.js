@@ -48,24 +48,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- VALIDACIÓN Y ENVÍO DEL FORMULARIO ---
-    const contactForm = document.getElementById('portfolioForm');
-    const formResponse = document.getElementById('formResponse');
+ // --- FORMULARIO CON FORMSPREE ---
+const contactForm = document.getElementById('portfolioForm');
+const formResponse = document.getElementById('formResponse');
 
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            formResponse.classList.remove('hidden', 'success', 'error');
-            formResponse.textContent = "Procesando...";
-            formResponse.classList.add('success');
+if (contactForm && formResponse) {
 
-            setTimeout(() => {
-                formResponse.textContent = `¡Excelente,! Datos recibidos.`;
-                contactForm.reset();
-            }, 1000);
-        });
-    }
+    contactForm.addEventListener('submit', () => {
+
+        formResponse.classList.remove(
+            'hidden',
+            'success',
+            'error'
+        );
+
+        formResponse.textContent =
+            'Enviando mensaje...';
+
+        formResponse.classList.add('success');
+
+    });
+
+}
 });
 
 const revealElements = document.querySelectorAll('.reveal');

@@ -385,10 +385,10 @@ body {
 
 /* COMPONENTE DE REDES SOCIALES VERTICALES GRANDES */
 .social-networks {
-    margin-top: 32px;
     display: flex;
-    flex-direction: row; /* Fila interna alineada */
-    gap: 20px;
+    flex-direction: row;
+    gap: 18px;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -1074,4 +1074,17 @@ body {
     .cert-card {
         flex-direction: column;
     }
+}
+
+.footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  text-align: center;
+}
+
+.footer p {
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  font-size: 0.9rem;
 }

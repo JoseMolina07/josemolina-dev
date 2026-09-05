@@ -68,7 +68,7 @@
               tecnologías como Flutter, Node.js, SQLite y herramientas de
               análisis de redes.
             </p>
-            <a href=". /assets/Jose_Molina_CV.pdf" download class="btn">
+            <a href="../assets/Jose_Molina_CV.pdf" download class="btn">
               Descargar CV
             </a>
           </div>
@@ -192,7 +192,7 @@
 
               <div class="project-actions">
                 <a href="../delegacion-tapijulapa.html" class="btn">
-                  Ver demo
+                  Ver más
                 </a>
 
                 <a
@@ -521,7 +521,7 @@
             <div class="cert-content">
               <span class="cert-provider">Coursera</span>
 
-              <h3>Automate cybersecurity taks with Python</h3>
+              <h3>Automate Cybersecurity Taks With Python</h3>
 
               <p>
                 Python, estructuras básicas, lógica de programación y resolución
@@ -765,10 +765,11 @@
             <div class="direct-channels">
               <p>
                 <strong>Correo electrónico:</strong>
-                <a href="mailto:tu-correo@email.com"
-                  >jose.neftali.molina.dev@gmail.com</a
-                >
+                <a href="mailto:jose.neftali.molina.dev@gmail.com">
+                  jose.neftali.molina.dev@gmail.com
+                </a>
               </p>
+              <p><strong>Télefono:</strong> +52 932-259-78-91</p>
               <p><strong>Ubicación actual:</strong> Tabasco, México</p>
             </div>
 
@@ -790,17 +791,17 @@
                 <i class="bx bxl-github social-icon-big"></i>
                 <span class="social-label">GitHub</span>
               </a>
+
+              <a
+                href="https://wa.me/529616083196"
+                target="_blank"
+                class="social-card-btn whatsapp-btn"
+              >
+                <i class="bx bxl-whatsapp social-icon-big"></i>
+
+                <span class="social-label"> WhatsApp </span>
+              </a>
             </div>
-
-            <a
-              href="https://wa.me/529616083196"
-              target="_blank"
-              class="social-card-btn whatsapp-btn"
-            >
-              <i class="bx bxl-whatsapp social-icon-big"></i>
-
-              <span class="social-label"> WhatsApp </span>
-            </a>
           </div>
 
           <form
@@ -812,6 +813,18 @@
             <div class="form-group">
               <label for="name">Nombre completo</label>
               <input
+                type="text"
+                id="name"
+                name="nombre"
+                required
+                maxlength="80"
+                placeholder="Ej. Juan Pérez"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input
                 type="email"
                 id="email"
                 name="correo"
@@ -820,16 +833,7 @@
                 placeholder="Ej. juan@empresa.com"
               />
             </div>
-            <div class="form-group">
-              <label for="email">Correo electrónico</label>
-              <input
-                type="email"
-                id="email"
-                name="correo"
-                required
-                placeholder="Ej. juan@empresa.com"
-              />
-            </div>
+
             <div class="form-group">
               <label for="message">Mensaje</label>
               <textarea
@@ -841,13 +845,25 @@
                 placeholder="Cuéntame sobre tu vacante o proyecto..."
               ></textarea>
             </div>
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nuevo mensaje desde el portafolio de José Molina"
+            />
+
             <button type="submit" class="btn btn-block">Enviar Mensaje</button>
+
             <p id="formResponse" class="form-message hidden"></p>
           </form>
         </div>
       </section>
     </main>
-
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>© 2026 José Molina. Todos los derechos reservados.</p>
+      </div>
+    </footer>
     <script src="../js/main.js"></script>
   </body>
 </html>
