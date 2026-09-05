@@ -9,12 +9,21 @@ Portafolio web personal desarrollado para presentar mis proyectos, formación y 
 </p>
 
 ---
-
 ## 🖼️ Vista previa
 
 <p align="center">
   <a href="https://josemolina-dev.vercel.app">
-    <img src="./assets/portada.png" alt="Vista previa de mi portafolio" width="900">
+    <img
+      src="./assets/portada.png"
+      alt="Portafolio web de José Neftalí Molina Pérez"
+      width="900"
+    />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://josemolina-dev.vercel.app">
+    <strong>🌐 Ver portafolio en línea</strong>
   </a>
 </p>
 
