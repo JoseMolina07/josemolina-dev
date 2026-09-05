@@ -14,9 +14,7 @@ Portafolio web personal desarrollado para presentar mis proyectos, formación y 
 
 <p align="center">
   <a href="https://josemolina-dev.vercel.app">
-    <img src="assets/portfolio-preview.png"
-         alt="Vista previa del portafolio de José Molina"
-         width="900">
+    <img src="./assets/portada.png" alt="Vista previa de mi portafolio" width="900">
   </a>
 </p>
 
