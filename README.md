@@ -21,12 +21,6 @@ Portafolio web personal desarrollado para presentar mis proyectos, formación y 
   </a>
 </p>
 
-<p align="center">
-  <a href="https://josemolina-dev.vercel.app">
-    <strong>🌐 Ver portafolio en línea</strong>
-  </a>
-</p>
-
 ---
 
 ## 📌 Sobre el proyecto
